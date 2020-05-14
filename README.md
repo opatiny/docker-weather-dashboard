@@ -1,14 +1,17 @@
 # docker-weather-dashboard
 
+Use **node-red** to store the weather data of 4 cities in an InfluxDB database and show it in a dashboard.
 
 Dockerization of [weather-bot project](https://github.com/opatiny/weather-bot).
 
-This project uses sub-modules!
+## Access the dashboard
 
-## How to use it
-### Clone the project
+
+## How to run the project
+
+### Clone
 ```bash
-git clone --recurse-submodules https://github.com/opatiny/docker-weather-dashboard
+git clone https://github.com/opatiny/docker-weather-dashboard
 ```
 
 ### Add your environment variables
@@ -45,15 +48,4 @@ Or use this script if you have node.js:
 
 ```bash
 npm run stop
-```
-
-## For development only: Updating the submodules
-
-```bash
-git submodule update --recursive --remote
-```
-
-Or use the script:
-```bash
-npm run update
 ```
