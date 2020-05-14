@@ -1,1 +1,5 @@
 docker-compose.yml
+node-red/weather-dashboard/.config.json.backup
+node-red/weather-dashboard/.flows.json.backup
+node-red/weather-dashboard/flows.json.backup
+node-red/weather-dashboard/.config.json
