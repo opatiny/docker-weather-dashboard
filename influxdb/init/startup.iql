@@ -1,0 +1,3 @@
+CREATE DATABASE weather_db
+CREATE CONTINUOUS QUERY weather_hourly_cq ON weather_db BEGIN SELECT mean(humidity) AS humidity, mean(rain) AS rain, mean(temp) AS temp, mean(tempFeel) AS tempFeel, mean(wind) AS wind INTO weather_db.autogen.weather_hourly FROM weather_db.autogen.weather GROUP BY time(1h), * END
+CREATE CONTINUOUS QUERY weather_daily_cq ON weather_db BEGIN SELECT mean(humidity) AS humidity, mean(rain) AS rain, mean(temp) AS temp, mean(tempFeel) AS tempFeel, mean(wind) AS wind INTO weather_db.autogen.weather_daily FROM weather_db.autogen.weather GROUP BY time(1d), * END
