@@ -1,0 +1,17 @@
+{
+    "name": "historical-weather-dashboard",
+    "description": "Store the weather data in 4 cities in an InfluxDB database and show it in interactive graphs.",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red-contrib-influxdb": "~0.4.0",
+        "node-red-contrib-simple-gate": "~0.3.1",
+        "node-red-dashboard": "~2.22.1",
+        "node-red-node-ui-table": "~0.3.1"
+    },
+    "node-red": {
+        "settings": {
+            "flowFile": "flows_linux.fritz.box.json",
+            "credentialsFile": "flows_linux.fritz.box_cred.json"
+        }
+    }
+}
