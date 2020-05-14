@@ -1,0 +1,11 @@
+version: "3"
+services:
+  node-red:
+    build: node-red/.
+    ports:
+      - "127.0.0.1:1881:1880"
+    restart: always
+    user: root
+    environment:
+      OWM_ID: <your openweathermap appid here>
+ 
