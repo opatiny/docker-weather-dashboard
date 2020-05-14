@@ -1,0 +1,3 @@
+[submodule "node-red/weather-dashboard"]
+	path = node-red/weather-dashboard
+	url = https://github.com/opatiny/weather-dashboard
