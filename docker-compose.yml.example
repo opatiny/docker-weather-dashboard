@@ -7,10 +7,15 @@ services:
     restart: always
     environment:
       OWM_ID: <your openweathermap appid here>
+    volumes:
+      - ./node-red/weather-dashboard:/data
+    user: root
   influxdb:
     image: "influxdb:1.8.0"
     restart: always
     expose:
-      - 8086
+        - 8086
     volumes:
-      - ./influxdb/db:/var/lib/influxdb
+      - ./influxdb/init:/docker-entrypoint-initdb.d # startup scripts
+      - ./influxdb/db:/var/lib/influxdb # for data storage
+    user: root
