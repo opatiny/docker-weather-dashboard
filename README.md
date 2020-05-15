@@ -6,6 +6,7 @@ Dockerization of [weather-bot project](https://github.com/opatiny/weather-bot).
 
 ## Access the dashboard
 
+The dashboard has been deployed on [http://weather.patiny.com](http://weather.patiny.com).
 
 ## How to run the project
 
